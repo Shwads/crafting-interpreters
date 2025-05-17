@@ -1,0 +1,4 @@
+package errorhandling
+
+func throwError() {
+}

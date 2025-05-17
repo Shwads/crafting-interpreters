@@ -17,6 +17,10 @@ func Shell() error {
 		if scanner.Text() == "exit" {
 			return nil
 		}
+        if scanner.Text() == "run" {
+            fmt.Printf("%s\n", builder.String())
+            return nil;
+        }
 		fmt.Fprintf(&builder, "%s", scanner.Text())
 		if scanner.Text() == "" {
 			fmt.Printf("%s\n", builder.String())
